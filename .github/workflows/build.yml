@@ -39,9 +39,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - run: cp .gitignore .gitignore_old && cp .npmignore .gitignore && rm node_modules -fr
-
       - run: 'npm run build'
+
+      - run: cp .gitignore .gitignore_old && cp .npmignore .gitignore && rm node_modules -fr
 
       - uses: peaceiris/actions-gh-pages@v4
         with:
