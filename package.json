@@ -29,7 +29,7 @@
     "Joao vitor FREZYN <00001097715413SP@al.educacao.sp.gov.br>"
   ],
   "scripts": {
-    "prepare": "pnpm i",
+    "prepare": "npm i @pnpm/exe --ignore-scripts && pnpm i && exit",
     "prebuild": "rimraf dist",
     "build": "tsc -p tsconfig.json",
     "deploy": "sh ./publish.sh",
