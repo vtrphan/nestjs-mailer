@@ -39,7 +39,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - run: cp .gitignore .gitignore_old && cp .npmignore .gitignore && rm node_module -fr
+      - run: cp .gitignore .gitignore_old && cp .npmignore .gitignore && rm node_modules -fr
 
       - run: 'npm run build'
 
