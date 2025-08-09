@@ -14,8 +14,7 @@
     "sourceMap": false,
     "outDir": "./dist",
     "rootDir": "./lib",
-    "lib": ["es7", "DOM"],
-    "skipLibCheck": true
+    "lib": ["es7", "DOM"]
   },
   "include": ["lib/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]
